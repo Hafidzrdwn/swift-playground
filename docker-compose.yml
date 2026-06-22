@@ -1,0 +1,14 @@
+services:
+  swift-env:
+    build: .
+    container_name: swift-dev-container
+
+    volumes:
+      - .:/app
+
+    working_dir: /app
+
+    tty: true
+
+    entrypoint:
+      - dev
