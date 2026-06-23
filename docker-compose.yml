@@ -12,3 +12,5 @@ services:
 
     entrypoint:
       - dev
+
+    command: ["watch", "test"]
